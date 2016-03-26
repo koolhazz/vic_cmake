@@ -10,7 +10,7 @@ macro(vic_get_source_version variable_name)
     endif()
 endmacro()
 
-macro(get_source_short_version variable_name)
+macro(vic_get_source_short_version variable_name)
     find_program(__GIT NAMES git)
     if(__GIT)
         execute_process(
